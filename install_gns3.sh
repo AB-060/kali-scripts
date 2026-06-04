@@ -16,16 +16,23 @@ echo "   Installation GNS3 sur Kali Linux"
 echo "============================================"
 
 # ── Étape 1 : Dépendances système ──────────────
-echo ""
-echo "[1/9] Installation des dépendances système..."
-sudo apt update -y
 sudo apt install -y \
-    python3-pip python3-pyqt5 python3-pyqt5.qtsvg \
-    python3-pyqt5.qtwebsockets vpcs \
-    openvswitch-switch docker.io \
-    git libpcap-dev cmake \
-    qemu-system-x86 wireshark \
-    software-properties-common
+    python3-pip \
+    python3-pyqt5 \
+    python3-pyqt5.qtsvg \
+    python3-pyqt5.qtwebsockets \
+    vpcs \
+    openvswitch-switch \
+    docker.io \
+    git \
+    libpcap-dev \
+    cmake \
+    qemu-system-x86 \
+    wireshark \
+    software-properties-common \
+    xterm \
+    busybox-static \
+    telnet
 
 # ── Étape 2 : Compiler ubridge ─────────────────
 echo ""
